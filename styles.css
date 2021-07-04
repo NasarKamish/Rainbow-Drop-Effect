@@ -1,0 +1,30 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.square {
+  position: relative;
+  top: -100%;
+  left: 0%;
+}
+
+@keyframes drop {
+  0% {
+    top: -100%;
+    background-color: var(--color);
+  }
+  25%,
+  100% {
+    top: 0%;
+  }
+}
